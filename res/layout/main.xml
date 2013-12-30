@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/routes"
+            />
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="102dp" android:layout_gravity="center" android:layout_marginLeft="0dp">
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/origin"
+                        android:id="@+id/textView"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="Philadelphia, PA"
+                    android:id="@+id/origin" android:layout_column="1"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/destination"
+                    android:id="@+id/textView"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:text="Harrisburg, PA"
+                    android:id="@+id/destination" android:layout_column="1"/>
+        </TableRow>
+        <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit"
+                    android:id="@+id/button" android:layout_gravity="center_horizontal|top"/>
+        </TableRow>
+    </TableLayout>
+    <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    </TableRow>
+</LinearLayout>
+

@@ -7,6 +7,7 @@
     <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
             android:text="@string/routes"
             />
     <TableLayout
@@ -19,13 +20,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/origin"
-                        android:id="@+id/textView"/>
+                android:labelFor="@+id/destination"
+                        android:id="@+id/textView"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center" />
             <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
                     android:text="Philadelphia, PA"
-                    android:id="@+id/origin" android:layout_column="1"/>
+                    android:id="@+id/origin" android:layout_column="1"
+                android:layout_gravity="right" />
         </TableRow>
         <TableRow
                 android:layout_width="fill_parent"
@@ -34,28 +39,38 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/destination"
-                    android:id="@+id/textView"/>
+                android:labelFor="@+id/destination"
+                    android:id="@+id/textView"
+                android:layout_marginLeft="2dp"
+                android:layout_gravity="center" />
             <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
                     android:text="Harrisburg, PA"
-                    android:id="@+id/destination" android:layout_column="1"/>
+                    android:id="@+id/destination" android:layout_column="1"
+                android:layout_gravity="right" />
         </TableRow>
         <TableRow
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+            android:measureWithLargestChild="false"
+            android:minHeight="50dp">
 
             <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                android:onClick="mapClick"
                     android:text="@string/submit"
-                    android:id="@+id/button" android:layout_gravity="center_horizontal|top"/>
+                    android:id="@+id/button" android:layout_gravity="center|top"
+                android:layout_column="1" />
         </TableRow>
     </TableLayout>
     <TableRow
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+        android:layout_marginTop="9dp"
+        android:layout_gravity="center|bottom">
     </TableRow>
 </LinearLayout>
 

@@ -71,6 +71,15 @@
             android:layout_height="fill_parent"
         android:layout_marginTop="9dp"
         android:layout_gravity="center|bottom">
+<EditText
+        android:layout_margin="20dip"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:minLines="15"
+               android:maxLines="15"
+               android:textSize="12sp"
+               android:editable="false"
+               android:id="@+id/my_edit"/>
     </TableRow>
 </LinearLayout>
 
